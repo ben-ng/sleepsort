@@ -164,6 +164,10 @@ sleepsort([3,1,2]);
 
 I hope that helped your understanding of closure, asyncrony, and hoisting!
 
+## Is this really O(n)?
+
+No, it's actually using your operating system's insertion sort.
+
 # License
 
 The MIT License (MIT)
