@@ -14,7 +14,7 @@ sleepsort([1,3,2], function (result) {
 
 ## Why?
 
-Sleepsort might be a joke, but its implementation demonstrates three very important things about javascript: closures, asyncronous functions, and variable hoisting.
+[Sleepsort might be a joke](https://dis.4chan.org/read/prog/1295544154), but its implementation demonstrates three very important things about javascript: closures, asyncronous functions, and variable hoisting.
 
 It is therefore an excellent example for a beginner to study to understand javascript better.
 
