@@ -1,5 +1,7 @@
 # SleepSort.js
 
+[![Build Status](https://travis-ci.org/ben-ng/sleepsort.png?branch=master)](https://travis-ci.org/ben-ng/sleepsort)
+
 ## Usage
 ```js
 var sleepsort = require('./index.js')
@@ -60,7 +62,6 @@ Output:
 i is 0
 i is 1
 i is 2
-i is 3
 undefined
 undefined
 undefined
@@ -142,16 +143,17 @@ Output:
 
 ## Optimization
 
-While optimizing sleepsort is somewhat of a laughing matter, creating functions inside a loop is almost always a bad idea. The following code is equivalent:
+While optimizing sleepsort is somewhat of a laughing matter, creating functions inside a loop is almost always a bad idea. The following code is equivalent and resolves this problem:
 
 ```js
-function sort (j) {
-  setTimeout(function () {
-    console.log(input[j]);
-  }, input[j] * 1000);
-};
-
 function sleepsort (input) {
+
+  function sort (j) {
+    setTimeout(function () {
+      console.log(input[j]);
+    }, input[j] * 1000);
+  };
+
   for(var i=0; i<input.length; ++i) {
     sort(i);
   }
