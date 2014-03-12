@@ -1,6 +1,6 @@
 {
   "name": "sleepsort",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A O(n) sorting algorithm. Please don't use this in production.",
   "main": "index.js",
   "scripts": {
